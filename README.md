@@ -1,3 +1,5 @@
+[TOC]
+
 ## 安装Anaconda
 
 使用wget下载
@@ -86,20 +88,27 @@ sudo apt-get install cuda
 
 ------
 
-## 下载源代码
+##运行
+
+### 下载源代码
 
 > git clone --recursive https://github.com/yzzzh/Graduation-Design.git
 >
 > cd Graduation-Design
 
-## 下载训练好的模型
+### 下载训练好的模型
+
+地址:https://drive.google.com/uc?id=0B0qPCUZ-3YwWZlJaRTRRQWRFYXM&export=download
+
+将文件复制到 **checkpoints** 中
+
+执行
 
 ~~~bash
-cd checkpoints
 bash download.sh
 ~~~
 
-## 执行代码
+### 执行代码
 
 ~~~Python
 cd ..
@@ -128,9 +137,15 @@ python demo.py
 >
 > bash tf_convert_data.sh
 
+------
+
 ## 训练自己的模型
 
 > bash tf_train.sh
+
+训练完毕后，打开 **log_files/log_finetune**
+
+将 **ssd_300_vgg.ckpt **文件复制到 **checkpoints** 下，并删除原来的ckpt文件
 
 ### 可视化训练过程
 
