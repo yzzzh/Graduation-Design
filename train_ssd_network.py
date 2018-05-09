@@ -363,8 +363,8 @@ def main(_):
         # =================================================================== #
         # Kicks off the training.
         # =================================================================== #
-        gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=FLAGS.gpu_memory_fraction)
-        config = tf.ConfigProto(log_device_placement=False,
+        gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=FLAGS.gpu_memory_fraction,allow_growth=True)
+        config = tf.ConfigProto(log_device_placement=False,allow_soft_placement=True,
                                 gpu_options=gpu_options)
         saver = tf.train.Saver(max_to_keep=5,
                                keep_checkpoint_every_n_hours=1.0,
