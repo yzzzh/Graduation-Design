@@ -1,7 +1,7 @@
 #!/bin/bash
 # This is the eval script.
 
-DATASET_DIR=../Data/VOCtest_06-Nov-2007/VOCdevkit/VOC2007_tfrecord/
+DATASET_DIR=../build_dataset/tfrecords/
 EVAL_DIR=../log_files/log_eval/    # Directory where the results are saved to
 CHECKPOINT_PATH=../checkpoints/ssd_300_vgg.ckpt
 

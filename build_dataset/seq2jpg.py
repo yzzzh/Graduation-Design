@@ -5,8 +5,8 @@ import glob
 import time
 
 def main():
-    inputdir = './dataset/data'
-    outputdir = './dataset/JPEGImages'
+    inputdir = './CalTechData'
+    outputdir = './CalTechVOC/JPEGImages'
 
     if not os.path.exists(outputdir):
         os.makedirs(outputdir)

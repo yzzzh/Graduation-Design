@@ -119,9 +119,9 @@ def parse_anno_file(vbb_inputdir,vbb_outputdir):
                         etree.ElementTree(anno_tree).write(outfile, pretty_print=True)
 
 def main():
-    vbb_inputdir = '/home/yzh/Data/CalTech/annotations'
+    vbb_inputdir = './CalTechData/annotations'
     #assert os.path.exists(vbb_inputdir)
-    vbb_outputdir = "/home/yzh/Data/CalTechVOC/dataset/Annotations"
+    vbb_outputdir = "./CalTechVOC/Annotations"
 
     start = time.time()
     parse_anno_file(vbb_inputdir,vbb_outputdir)

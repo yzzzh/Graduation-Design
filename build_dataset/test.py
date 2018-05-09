@@ -21,6 +21,6 @@ def visualize_bbox(xml_file, img_file):
     cv2.waitKey(0)
 
 if __name__ == '__main__':
-    xml_file = "./dataset/xmlresult/set01_V000_100.xml"
-    img_file = "./dataset/JPEGImages/set01_V000_100.jpg"
+    xml_file = "./CalTechVOC/Annotations/set01_V000_100.xml"
+    img_file = "./CalTechVOC/JPEGImages/set01_V000_100.jpg"
     visualize_bbox(xml_file, img_file)

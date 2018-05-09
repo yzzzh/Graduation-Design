@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #The directory where the dataset files are stored.
-DATASET_DIR=~/Data/CalTechVOC/tfrecords/
+DATASET_DIR=../build_dataset/tfrecords/
 
 #Directory where checkpoints and event logs are written to.
 TRAIN_DIR=../log_files/log_finetune/

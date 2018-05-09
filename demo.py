@@ -12,6 +12,7 @@ slim = tf.contrib.slim
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
+import glob
 import sys
 sys.path.append('../')
 
@@ -90,16 +91,29 @@ def camera_detector(cap, wait=10):
 def main():
     # Test on some demo image and visualize output.
     # detect from image
-    # path = 'demo/'
-    # image_names = sorted(os.listdir(path))
-    # for it  in image_names:
-    #     img = mpimg.imread(path + it)
-    #     rclasses, rscores, rbboxes =  process_image(img)
-    #     visualization.plt_bboxes(img, rclasses, rscores, rbboxes)
+    path = 'demo/'
+
+    image_names = sorted(os.listdir(path))
+    for img_name in image_names:
+        img = mpimg.imread(path + img_name)
+        rclasses, rscores, rbboxes =  process_image(img)
+        visualization.plt_bboxes(img, rclasses, rscores, rbboxes)
 
     # detect from camera
-    cap = cv2.VideoCapture(-1)
-    camera_detector(cap)
+    # cap = cv2.VideoCapture(-1)
+    # camera_detector(cap)
+
+    #test speed
+    # timer = Timer()
+    # i = 0
+    # timer.tic()
+    # for img in glob.glob('./build_dataset/CalTechVOC/JPEGImages/*.jpg'):
+    #     process_image(img)
+    #     i += 1
+    #     if i>=1000:
+    #         break
+    # timer.toc()
+    # print('Time taken : {}'.format(timer.average_time/i))
 
 if __name__ == '__main__':
     main()

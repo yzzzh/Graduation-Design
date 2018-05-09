@@ -3,8 +3,8 @@ import os
 import random
 import time
 
-xmlfilepath='/home/yzh/Data/CalTechVOC/dataset/Annotations'    #xml文件的路径
-saveBasePath='/home/yzh/Data/CalTechVOC/dataset/ImageSets/Main'           #txt 文件的存储路径
+xmlfilepath='./CalTechVOC/Annotations'    #xml文件的路径
+saveBasePath='./CalTechVOC/ImageSets/Main'           #txt 文件的存储路径
 if not os.path.exists(saveBasePath):
     os.makedirs(saveBasePath)
 assert os.path.exists(saveBasePath)
