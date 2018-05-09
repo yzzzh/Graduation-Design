@@ -110,7 +110,7 @@ python demo.py
 
 ## 制作自己的数据集
 
-###制作VOC数据集（以CalTechPesdrain为例)
+###制作VOC数据集（以CalTechPedestrian为例)
 
 > cd build_dataset
 
@@ -128,9 +128,7 @@ python demo.py
 >
 > bash tf_convert_data.sh
 
----
-
-##训练自己的模型
+## 训练自己的模型
 
 > bash tf_train.sh
 
