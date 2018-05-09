@@ -88,7 +88,7 @@ sudo apt-get install cuda
 
 ------
 
-##运行
+## 运行
 
 ### 下载源代码
 
@@ -123,7 +123,7 @@ python demo.py
 
 > cd build_dataset
 
-### 安装原始数据集
+### 下载原始数据集
 
 > bash download.sh
 
@@ -145,7 +145,7 @@ python demo.py
 
 训练完毕后，打开 **log_files/log_finetune**
 
-将 **ssd_300_vgg.ckpt **文件复制到 **checkpoints** 下，并删除原来的ckpt文件
+将 **ssd_300_vgg.ckpt** 文件复制到 **/checkpoints** 下，并删除原来的ckpt文件
 
 ### 可视化训练过程
 

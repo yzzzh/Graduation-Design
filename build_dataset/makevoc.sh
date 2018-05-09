@@ -1,6 +1,6 @@
 #!/usr/bin
 
-if [! -d CalTechVOC];then
+if [ ! -d CalTechVOC ];then
     mkdir CalTechVOC
 fi
 

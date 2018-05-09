@@ -37,7 +37,7 @@ def vbb_anno2dict(vbb_file, cam_id):
             if not annos[frame_name]["bbox"]:
                 del annos[frame_name]
 
-    print (annos)
+    # print (annos)
     return annos
 
 

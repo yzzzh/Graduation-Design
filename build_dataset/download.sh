@@ -1,6 +1,6 @@
 #!/usr/bin
 
-if [! -d data]; then
+if [ ! -d CalTechData ];then
     mkdir CalTechData
 fi
 
